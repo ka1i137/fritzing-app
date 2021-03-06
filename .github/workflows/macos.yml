@@ -26,7 +26,7 @@ jobs:
       - name: install libgit
         run: git clone https://github.com/libgit2/libgit2.git ../libgit2
       - name: build libgit2
-        run: cd ../libgit2 && mkdir build && cd build ;cmake .. ; cmake --build .;cd fritzing-app
+        run: cd ../libgit2 && mkdir build && cd build ;cmake .. ; cmake --build .;cd ../../fritzing-app
       - name: Install Qt
         uses: jurplel/install-qt-action@v2.13.0
         with:
