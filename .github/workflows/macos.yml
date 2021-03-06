@@ -42,7 +42,8 @@ jobs:
           cmake ..
           cmake --build .
           echo "install"
-          cmake .. -DCMAKE_INSTALL_PREFIX=/Users/runner/work/fritzing-app/libgit2
+          mkdir -p /Users/runner/work/fritzing-app/libgit2/build
+          cmake .. -DCMAKE_INSTALL_PREFIX=/Users/runner/work/fritzing-app/libgit2/build
           cmake --build . --target install
           cd ${PREFIX}
       - name: build macos
