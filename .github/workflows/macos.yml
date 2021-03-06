@@ -23,8 +23,8 @@ jobs:
     env:
       targetName: HelloActions-Qt
     steps:
-      - name: build libgit2
-        run: buildgit2.sh
+      - name: precess libgit2
+        run: ./buildgit2.sh
       - name: Install Qt
         uses: jurplel/install-qt-action@v2.13.0
         with:
