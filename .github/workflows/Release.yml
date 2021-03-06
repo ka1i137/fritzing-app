@@ -1,6 +1,6 @@
 name: MacOS
 on: 
-  push:
+  release:
     paths:
       - '*.pro'
       - 'src/**'
